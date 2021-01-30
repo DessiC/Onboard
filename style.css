@@ -1,0 +1,273 @@
+
+/* 'Roboto Mono', monospace; */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    font-family:'Roboto Mono', monospace;
+    color:#ff6205;
+}
+.wrapper{
+    display:flex;
+    flex-wrap:wrap;
+   width:85%;
+   margin:auto;
+   justify-content: center;
+}
+/* .container{
+    display:flex;
+} */
+/* .container:first-child{
+    padding-top:40px;
+} */
+.box{
+   margin:10px;
+    width:20%;
+    height:250px;
+    border:2px solid black;
+    border-radius:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+}
+a{
+    text-decoration:none;
+}
+/* info om skolan */
+.info-box{
+  
+    width:20%;
+    font-size:19px;
+   /*  border:1px solid black; */
+   border-radius:10px;
+    height:200px;
+    margin:25px;
+    padding: 50px;
+   /*  text-align:center; */
+    background-color:#f3f3f3;
+}
+.info-heading{
+    color:black;
+}
+.info{
+    text-align:center;
+}
+.icon{
+    font-size:50px;
+    color:#ff6205;
+}
+/*   --------------------navbar------------------ */
+.right{
+    display:flex;
+}
+nav{
+    height:90px;
+    display:flex;
+    justify-content: space-between;
+    
+    font-size:25px;
+    /* overflow: hidden; */
+    /* background-color: #333; */
+background-color: #f9f9f9;
+    position: relative;
+      
+}
+  nav #myLinks {
+    display: none;
+  }
+#myLinks{
+    margin-top:90px;
+   /*  text-align:center; */
+    
+}
+  nav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    background-color: #f9f9f9;
+   }
+  .links{
+    font-size:20px;
+    width:400px;
+    height:70px;
+    background-color:#f9f9f9;
+  }
+
+  nav a.icon {
+   /*  background: black; */
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .right a:hover {
+    background-color:  rgb(207, 207, 207);
+    color: black;
+  }
+#logo{
+    font-size:30px;
+}
+/*   .active {
+    background-color: #4CAF50;
+    color: white;
+  } */
+
+
+/*   --------------------CSN------------------ */
+  .csn-container{
+      width:50%;
+      height:600px;
+    /*   border:1px solid black; */
+    padding: 40px;
+      font-size:20px;
+  }
+  .csn-wrapper{
+    width:85%;
+    margin:auto;
+    display:flex;
+  }
+  #csn-video{
+      padding:30px;
+  }
+  #csn-link{
+      text-decoration:underline;
+  }
+
+
+  /*--------------------FAQ------------------*/
+
+  .collapse {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    margin:2px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+  }
+  
+  .active, .collapse:hover {
+    background-color: #555;
+  }
+  
+  .content {
+      font-size:18px;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  .collapse:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  .collapse-container{
+      padding-top:50px;
+      justify-content: center;
+      width:900px;
+  }
+  .faq-wrapper{
+      display:flex;
+      justify-content: center;
+  }
+  h1{
+      text-align:center;
+  }
+
+ /*--------------------IT-tjänster------------------*/
+ .it-box{
+    width:45%;
+    font-size:19px;
+    border:2px solid lightgrey;
+    border-radius:5px;
+    height:300px;
+    margin:25px;
+    padding: 10px;
+    text-align:center;
+}
+.wifi{
+    font-size:50px;
+}
+.wifi-password{
+    font-size:30px;
+}
+/*--------------------Schema------------------*/
+.schema-container{
+padding-top:50px;
+}
+/*--------------------Schoolsoft------------------*/
+.schoolsoft-container{
+    width:50%;
+    height:600px;
+  /*   border:1px solid black; */
+  padding: 40px;
+    font-size:20px;
+}
+.schoolsoft-wrapper{
+  width:85%;
+  margin:auto;
+  display:flex;
+}
+#schoolsoft-video{
+    padding:30px;
+}
+#schoolsoft-link{
+    text-decoration:underline;
+}
+
+.read-more{
+
+}
+ /*--------------------Studieinfo------------------*/
+.hero {
+    background-image:url('images/byggproduktionsledare_nyproduktion_thumb.jpg');
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   /*  position: relative; */
+}
+.hero h1{
+   font-size:40px;
+    color: white;
+}
+
+@media (max-width: 991.98px){}
+
+@media screen and (max-width: 768px){
+    .info-box{
+        width:30%;
+        font-size:15px;
+    
+        height:100px;
+        margin:0;
+        padding: 20px;
+    
+    }
+    .container{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    .box{
+        width:40%;
+    }
+}
+
+@media screen and (max-width: 500px){}
