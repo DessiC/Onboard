@@ -99,9 +99,12 @@ background-color: #f9f9f9;
     background-color:  rgb(207, 207, 207);
     color: black;
   }
-#logo{
+  #logo img{
+      width:120px;
+  }
+/* #logo{
     font-size:30px;
-}
+} */
 /*   .active {
     background-color: #4CAF50;
     color: white;
@@ -167,6 +170,8 @@ background-color: #f9f9f9;
     }
    
   .csn-container{
+      display:flex;
+      flex-wrap:wrap;
       width:50%;
       height:600px;
     /*   border:1px solid black; */
@@ -174,8 +179,10 @@ background-color: #f9f9f9;
       font-size:20px;
   }
 
-  #csn-video{
-      padding:30px;
+  .video{
+    width:600px;
+    height:300px;
+    margin:50px 0 0px 50px;
   }
   #csn-link{
       text-decoration:underline;
@@ -319,6 +326,7 @@ background-image:url('images/affarsutvecklare_thumb.jpg');
   width:85%;
   margin:auto;
   display:flex;
+  /* flex-direction: column; */
 }
 #schoolsoft-video{
     padding:30px;
@@ -327,9 +335,7 @@ background-image:url('images/affarsutvecklare_thumb.jpg');
     text-decoration:underline;
 }
 
-.read-more{
 
-}
  /*--------------------Studieinfo------------------*/
 .hero-studieinfo {
     background-image:url('images/byggproduktionsledare_nyproduktion_thumb.jpg');
@@ -343,9 +349,8 @@ background-image:url('images/affarsutvecklare_thumb.jpg');
    /*  position: relative; */
 }
 footer{
-   
-    height:400px;
     background-color:black;
+    padding:50px;
 }
 .footer-container{
     width:85%;
@@ -362,15 +367,56 @@ footer{
 footer p{
     font-size:20px;
 }
-@media (max-width: 991.98px){}
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+  .footer-container{
+    width:100%;
+    display:flex;
+   flex-wrap:wrap;
+}
+/* .footer-box{
+    width:40%;
+} */
 
+@media (max-width: 991.98px){
+  .info-box{
+      width:40%;
+      padding:15px;
+      height:250px;
+  }  
+  .csn-wrapper,
+  .schoolsoft-wrapper{
+      display:flex;
+      flex-direction:row;
+
+  }
+  
+  .csn-container,
+  .schoolsoft-container {
+    flex-wrap: nowrap;
+    width: 50%;
+   padding:50px 0 0;
+    font-size: 17px;
+}
+.video{
+    width:400px;
+    height:200px;
+   /*  margin:50px 0 0px 50px; */
+  }
+  .footer-box{
+      width:45%;
+  }
+}
 @media screen and (max-width: 768px){
+    .wrapper{
+        width:100%;
+    }
     .info-box{
-        width:30%;
+        width:35%;
         font-size:15px;
-    
-        height:100px;
-        margin:0;
+        height:200px;
         padding: 20px;
     
     }
@@ -381,6 +427,90 @@ footer p{
     .box{
         width:40%;
     }
+    .csn-wrapper,
+    .schoolsoft-wrapper{
+        width:100%;
+        flex-direction:column;
+       
+    }
+    .csn-container,
+    .schoolsoft-container{
+        width:90%;
+        font-size:20px;
+        display:flex;
+        flex-wrap:wrap;
+        height:100%;
+    }
+      .links{
+          height:40px;
+      }  
+    
+      .footer-container{
+   
+        display:flex;
+        flex-direction: column;
+       
+    }
+   
+   /*  height:600px; */
+  /*   border:1px solid black; */
+  /* padding: 40px; */
+    
+    
 }
 
-@media screen and (max-width: 500px){}
+@media screen and (max-width: 500px){
+    h1{
+        font-size:40px;
+    }
+    p{
+        font-size:15px;
+    }
+    .wrapper{
+        padding-top:10px;
+    }
+    .collapse-container{
+        padding-top:20px;
+    }
+    .video{
+        width:300px;
+        height:150px;
+       /*  margin:50px 0 0px 50px; */
+      }
+  .links{
+      width:120px;
+  }
+  .info-box{
+    width:90%;
+   }
+   .csn-text{
+       width:100%;
+   }
+   .csn-container,
+   .schoolsoft-container{
+      
+    }
+    .it-box{
+        width:100%;
+        height:240px;
+        text-align:center;
+    }
+    .box{
+        margin: 10px;
+    width: 40%;
+    height: 100px;
+    font-size: 20px;
+}
+#logo img{
+    width:90px;
+}
+footer{
+    padding:5px;
+}
+.footer-box {
+    padding: 10px 0 0 20px;
+   
+  
+}
+}
+
