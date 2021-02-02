@@ -1,5 +1,3 @@
-
-/* 'Roboto Mono', monospace; */
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -14,6 +12,9 @@ h3{
 h4{
     font-size:22px;
 }
+a{
+    text-decoration:none;
+}
 .wrapper{
     padding:50px 0;
     display:flex;
@@ -22,93 +23,62 @@ h4{
    margin:auto;
    justify-content: center;
 }
-
-.box{
-   margin:25px;
-    width:20%;
-    height:250px;
-    /* border:3px solid darkgrey; */
-    border-radius:5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:30px;
-    background-color:#f3f3f3;
-    box-shadow: 5px 3px 3px grey;
-    transition: transform .2s;
-}
-.box:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1); 
-    background-color:rgb(212, 211, 211);
-  }
-a{
-    text-decoration:none;
-}
-
-
 /*   --------------------navbar------------------ */
-.right{
-    display:flex;
-}
+
 nav{
     height:90px;
     display:flex;
     justify-content: space-between;
-    
     font-size:25px;
-    /* overflow: hidden; */
-    /* background-color: #333; */
-background-color: #f9f9f9;
-    position: relative;
-      
+    background-color: #f9f9f9; 
 }
-  nav #myLinks {
-    display: none;
-  }
-#myLinks{
-    margin-top:90px;
-   /*  text-align:center; */
-    
+.left{
+    margin:5px 0 0 10px;
 }
-  nav a {
-    color: black;
-    padding: 14px 16px;
-    text-decoration: none;
-   /*  font-size: 17px; */
-    display: block;
-    background-color: #f9f9f9;
-   }
-  .links{
-    font-size:20px;
-    width:400px;
-    height:70px;
-    background-color:#f9f9f9;
-  }
-
-  nav a.icon {
-   /*  background: black; */
-    display: block;
-    position: absolute;
-    right: 0;
+#sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
     top: 0;
+    right: 0;
+    background-color: #f9f9f9; 
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top:80px;
   }
   
-  .right a:hover {
-    background-color:  rgb(207, 207, 207);
-    color: black;
+  #sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #070707;
+    display: block;
+    transition: 0.3s;
   }
+  
+  #sidepanel a:hover {
+    color: #6e6e6e;
+  }
+  
+  #sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 35px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+  }
+ 
   #logo img{
       width:120px;
   }
-/* #logo{
-    font-size:30px;
-} */
-/*   .active {
-    background-color: #4CAF50;
-    color: white;
-  } */
+/*-------------------index-----------------------*/
   .hero{
         background-image:url('images/byggproduktionsledare_nyproduktion_thumb.jpg');
             display:flex;
@@ -120,7 +90,29 @@ background-color: #f9f9f9;
             background-size: cover;
            /*  position: relative; */
         }
-       
+      
+        
+        .box{
+           margin:25px;
+            width:20%;
+            height:250px;
+            /* border:3px solid darkgrey; */
+            border-radius:5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:30px;
+            background-color:#f3f3f3;
+            box-shadow: 5px 3px 3px grey;
+            transition: transform .2s;
+        }
+        .box:hover {
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1); 
+            background-color:rgb(212, 211, 211);
+          }
+      
 /*   --------------------info om skolan------------------ */
 .hero-info{
     background-image:url('images/byggproduktionsledare_nyproduktion_thumb.jpg');
@@ -171,6 +163,7 @@ background-color: #f9f9f9;
    
   .csn-container{
       display:flex;
+      justify-content: center;
       flex-wrap:wrap;
       width:50%;
       height:600px;
@@ -180,9 +173,8 @@ background-color: #f9f9f9;
   }
 
   .video{
-    width:600px;
+    width:500px;
     height:300px;
-    margin:50px 0 0px 50px;
   }
   #csn-link{
       text-decoration:underline;
@@ -285,6 +277,22 @@ background-color: #f9f9f9;
 .wifi-password{
     font-size:30px;
 }
+#img-wifi{
+    width:150px;
+}
+#img-meet{
+    width:120px;
+}
+#img-classroom,
+#img-slack{
+    width:180px;
+}
+#img-hangouts{
+    width:300px;
+}
+#img-discord{
+    width:100px;
+}
 /*--------------------Schema------------------*/
 .hero-schema{
     background-image:url('images/byggproduktionsledare_nyproduktion_thumb.jpg');
@@ -315,6 +323,8 @@ background-image:url('images/affarsutvecklare_thumb.jpg');
 }
 
 .schoolsoft-container{
+    display:flex;
+    justify-content: center;
     width:50%;
     height:600px;
   /*   border:1px solid black; */
@@ -380,6 +390,9 @@ footer p{
     width:40%;
 } */
 
+
+
+
 @media (max-width: 991.98px){
   .info-box{
       width:40%;
@@ -415,10 +428,15 @@ footer p{
     }
     .info-box{
         width:35%;
-        font-size:15px;
-        height:200px;
+        font-size:14px;
+        height:150px;
         padding: 20px;
-    
+    }
+    .info-box h3{
+        font-size:16px;
+    }
+    .icon{
+        font-size:30px;
     }
     .container{
         flex-wrap:wrap;
@@ -436,7 +454,7 @@ footer p{
     .csn-container,
     .schoolsoft-container{
         width:90%;
-        font-size:20px;
+        font-size:16px;
         display:flex;
         flex-wrap:wrap;
         height:100%;
@@ -451,17 +469,12 @@ footer p{
         flex-direction: column;
        
     }
-   
-   /*  height:600px; */
-  /*   border:1px solid black; */
-  /* padding: 40px; */
-    
     
 }
 
 @media screen and (max-width: 500px){
     h1{
-        font-size:40px;
+        font-size:30px;
     }
     p{
         font-size:15px;
@@ -474,8 +487,12 @@ footer p{
     }
     .video{
         width:300px;
-        height:150px;
-       /*  margin:50px 0 0px 50px; */
+        margin-left:30px;
+    
+      }
+      .schoolsoft-text,
+      .csn-text{
+          padding:0 0 50px 20px;
       }
   .links{
       width:120px;
@@ -490,27 +507,53 @@ footer p{
    .schoolsoft-container{
       
     }
-    .it-box{
-        width:100%;
-        height:240px;
-        text-align:center;
-    }
     .box{
         margin: 10px;
     width: 40%;
     height: 100px;
     font-size: 20px;
 }
+    .it-box{
+        width:100%;
+        height:180px;
+        text-align:center;
+    }
+.it-box a{
+    font-size:15px;
+}
 #logo img{
     width:90px;
+}
+.wifi-password{
+    font-size:19px;
+}
+#img-wifi{
+    width:100px;
+}
+#img-meet{
+    width:80px;
+}
+#img-classroom,
+#img-slack{
+    width:100px;
+}
+#img-hangouts{
+    width:150px;
+}
+#img-discord{
+    width:70px;
 }
 footer{
     padding:5px;
 }
 .footer-box {
     padding: 10px 0 0 20px;
-   
-  
+}
+footer p{
+    font-size:16px;
+}
+footer h4{
+    font-size:18px;
 }
 }
 

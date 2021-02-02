@@ -13,27 +13,26 @@
 </head>
 <body id='it-body'>
     <header>
-        <nav>
-          <div class='left'>
-            <a id='logo' href='index.html'><img src='images/kyh.png' width='120px'></a>
-          </div>
-          <div class='right'>
-  <div id="myLinks">
-    <a class='links' href='info.html'>Info om skolan</a>
-    <a class='links' href='csn.html'>CSN</a>
-    <a class='links' href='faq.html'>FAQ</a>
-    <a class='links' href='it.html'>IT-tjänster</a>
-    <a class='links' href='lexikon.html'>Lexikon</a>
-    <a class='links' href='schema.html'>Schema</a>
-    <a class='links' href='schoolsoft.html'>Schoolsoft</a>
-    <a class='links' href='studieinfo.html'>Studieinformation</a>
-  </div>
-  <a href="javascript:void(0);" class="menu-icon" onclick="handleClick()">
-    <i class="fa fa-bars"></i>
-  </a>
-          </div>
-  
-        </nav>
+      <nav>
+        <div class='left'>
+        <a id='logo' href='index.html'><img src='images/kyh.png' width='120px'></a>
+    </div>
+    <div id="sidepanel" class="right">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a class='links' href='info.html'>Info om skolan</a>
+<a class='links' href='csn.html'>CSN</a>
+<a class='links' href='faq.html'>FAQ</a>
+<a class='links' href='it.html'>IT-tjänster</a>
+<a class='links' href='lexikon.html'>Lexikon</a>
+<a class='links' href='schema.html'>Schema</a>
+<a class='links' href='schoolsoft.html'>Schoolsoft</a>
+<a class='links' href='studieinfo.html'>Studieinformation</a>
+    </div>
+    <a class="openbtn" onclick="openNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    </nav>
     </header>
     <div class='hero-it'>
       <h1>IT-tjänster</h1>
@@ -42,18 +41,18 @@
     <!--   <div class='container'> -->
   <div class='it-box'>
       
-    <img src='images/wifi.png' width='150px'>
+    <img id='img-wifi' src='images/wifi.png' >
       <p class='wifi-password'>Lösenord: xxxxxxx</p>
   </div>
   <div class='it-box'>
-    <img src='images/googleMeet.png' width='120px'>
+    <img id='img-meet' src='images/googleMeet.png' >
      <!--  <h3>Google Meet</h3> -->
    
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       <a href='https://meet.google.com/'>Gå till Google Meet</a>
   </div>
   <div class='it-box'>
-    <img src='images/googleClassroom.png' width='180px'>
+    <img id='img-classroom' src='images/googleClassroom.png' >
      <!--  <h3>Google Classroom</h3> -->
       <p>Lorem ipsum dolor sit amet consectetur, </p>
       <a href='https://classroom.google.com/'>Gå till Google Classroom</a>
@@ -62,7 +61,7 @@
 <!-- </div>
 <div class='container'> -->
   <div class='it-box'>
-    <img src='images/slack.png' width='180px'>
+    <img id='img-slack' src='images/slack.png' >
     
      <!--  <h3>Slack</h3> -->
       <p>Lorem ipsum dolor sit amet consectetur</p>
@@ -70,13 +69,13 @@
   </div>
  
   <div class='it-box'>
-    <img src='images/googleHangouts.png' width='300px'>
+    <img id='img-hangouts' src='images/googleHangouts.png' >
      <!--  <h3>Hangout</h3> -->
       <p>Lorem ipsum dolor sit amet consectetur</p>
       <a href='https://hangouts.google.com/'>Gå till Google Hangouts</a>
   </div>
   <div class='it-box'>
-    <img src='images/discord.jpeg' width='100px'>
+    <img id='img-discord' src='images/discord.jpeg'>
      <!--  <h3>Discord</h3> -->
       <p>Lorem ipsum dolor sit amet consectetur</p>
       <a href='www.discord.com'>Gå till Discord</a>
@@ -85,7 +84,8 @@
 </div>
 <footer>
   <div class='footer-container'>
-  <div class='footer-box'><h4>076-885 21 20</h4>
+  <div class='footer-box'>
+    <img src='images/logo-black.png' width='120px'><h4>076-885 21 20</h4>
   <h4>antagningen@kyh.se</h4></div>
   <div class='footer-box'><h4>Våra utbildningar</h4>
   <p>Samhällsbyggnad</p>

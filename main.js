@@ -1,11 +1,10 @@
-function handleClick() {
-    var myLinks = document.getElementById("myLinks");
-    if (myLinks.style.display === "block") {
-        myLinks.style.display = "none";
-    } else {
-        myLinks.style.display = "block";
-    }
-  }
+function openNav() {
+  document.getElementById("sidepanel").style.width = "270px";
+}
+
+function closeNav() {
+  document.getElementById("sidepanel").style.width = "0";
+}
 
 
   var collapse = document.getElementsByClassName("collapse");

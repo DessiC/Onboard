@@ -10,28 +10,27 @@
 </head>
 <body>
     <header>
-        <nav>
-          <div class='left'>
-            <a id='logo' href='index.html'><img src='images/kyh.png' width='120px'></a>
-          </div>
-          <div class='right'>
-  <div id="myLinks">
-    <a class='links' href='info.html'>Info om skolan</a>
-    <a class='links' href='csn.html'>CSN</a>
-    <a class='links' href='faq.html'>FAQ</a>
-    <a class='links' href='it.html'>IT-tjänster</a>
-    <a class='links' href='lexikon.html'>Lexikon</a>
-    <a class='links' href='schema.html'>Schema</a>
-    <a class='links' href='schoolsoft.html'>Schoolsoft</a>
-    <a class='links' href='studieinfo.html'>Studieinformation</a>
-  </div>
-  <a href="javascript:void(0);" class="menu-icon" onclick="handleClick()">
-    <i class="fa fa-bars"></i>
-  </a>
-          </div>
-           <!--  <div id='logo' class='active'><a href='index.html'>KYH</a></div>
-            <div><i class="fas fa-bars"></i></div> -->
-        </nav>
+      <nav>
+        <div class='left'>
+        <a id='logo' href='index.html'><img src='images/kyh.png' width='120px'></a>
+    </div>
+    <div id="sidepanel" class="right">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a class='links' href='info.html'>Info om skolan</a>
+<a class='links' href='csn.html'>CSN</a>
+<a class='links' href='faq.html'>FAQ</a>
+<a class='links' href='it.html'>IT-tjänster</a>
+<a class='links' href='lexikon.html'>Lexikon</a>
+<a class='links' href='schema.html'>Schema</a>
+<a class='links' href='schoolsoft.html'>Schoolsoft</a>
+<a class='links' href='studieinfo.html'>Studieinformation</a>
+    </div>
+   <!--  <button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>  --> 
+    <a class="openbtn" onclick="openNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    </nav>
     </header>
 <div class='hero-studieinfo'>
   <h1>Studieinformation</h1>
@@ -42,7 +41,7 @@
       <div class='title'>
       <h3>Kurslitteratur</h3>
     </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad delectus veniam alias deserunt consectetur est, ipsa, unde temporibus cumque ratione omnis.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad delectus veniam alias deserunt consectetur est, ipsa</p>
       <div class='read-more'>Läs mer</div>
   </div>
   <div class='info-box'>
@@ -88,7 +87,9 @@
 </div>
 <footer>
   <div class='footer-container'>
-  <div class='footer-box'><h4>076-885 21 20</h4>
+  <div class='footer-box'>
+    <img src='images/logo-black.png' width='120px'>
+    <h4>076-885 21 20</h4>
   <h4>antagningen@kyh.se</h4></div>
   <div class='footer-box'><h4>Våra utbildningar</h4>
   <p>Samhällsbyggnad</p>
