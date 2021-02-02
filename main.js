@@ -21,14 +21,3 @@ for (var i = 0; i < collapse.length; i++) {
     }
   });
 }
-/*   function handleClick(){
-  
-for (var i = 0; i < myLinks.length; i++) {
-  var myLinks = document.getElementsByClassName("myLinks");
-    if (myLinks.style.display === "block") {
-        myLinks.style.display = "none";
-    } else {
-        myLinks.style.display = "block";
-    }
-}
-  } */

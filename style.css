@@ -88,7 +88,6 @@ nav{
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-           /*  position: relative; */
         }
       
         
@@ -96,7 +95,6 @@ nav{
            margin:25px;
             width:20%;
             height:250px;
-            /* border:3px solid darkgrey; */
             border-radius:5px;
             display: flex;
             justify-content: center;
@@ -123,18 +121,15 @@ nav{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-       /*  position: relative; */
     }
    
 .info-box{
    width:20%;
     font-size:19px;
-   /*  border:1px solid black; */
    border-radius:10px;
     height:200px;
     margin:25px;
     padding: 50px;
-   /*  text-align:center; */
     background-color:#f3f3f3;
 }
 .info-heading{
@@ -158,7 +153,6 @@ nav{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-       /*  position: relative; */
     }
    
   .csn-container{
@@ -167,7 +161,6 @@ nav{
       flex-wrap:wrap;
       width:50%;
       height:600px;
-    /*   border:1px solid black; */
     padding: 40px;
       font-size:20px;
   }
@@ -191,12 +184,9 @@ nav{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-       /*  position: relative; */
     }
     
   .collapse {
-   /*  background-color: #777; */
-    /* color: white; */
     background-color:#e7e5e5;
     color:#ff6205;
     cursor: pointer;
@@ -223,7 +213,6 @@ nav{
   .collapse:after {
     content: '\002B';
     color:#ff6205;
-   /*  color: white; */
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -259,7 +248,6 @@ nav{
  .it-box{
     width:40%;
     font-size:19px;
-   /*  border:3px solid rgb(238, 238, 238); */
     background-color:white;
     border-radius:5px;
     height:300px;
@@ -303,7 +291,6 @@ nav{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-       /*  position: relative; */
     }
     
 .schema-container{
@@ -319,7 +306,6 @@ background-image:url('images/affarsutvecklare_thumb.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-   /*  position: relative; */
 }
 
 .schoolsoft-container{
@@ -327,7 +313,6 @@ background-image:url('images/affarsutvecklare_thumb.jpg');
     justify-content: center;
     width:50%;
     height:600px;
-  /*   border:1px solid black; */
   padding: 40px;
     font-size:20px;
 }
@@ -336,10 +321,9 @@ background-image:url('images/affarsutvecklare_thumb.jpg');
   width:85%;
   margin:auto;
   display:flex;
-  /* flex-direction: column; */
 }
-#schoolsoft-video{
-    padding:30px;
+.schoolsoft-text{
+    font-size:20px;
 }
 #schoolsoft-link{
     text-decoration:underline;
@@ -356,7 +340,6 @@ background-image:url('images/affarsutvecklare_thumb.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-   /*  position: relative; */
 }
 footer{
     background-color:black;
@@ -386,9 +369,7 @@ footer p{
     display:flex;
    flex-wrap:wrap;
 }
-/* .footer-box{
-    width:40%;
-} */
+
 
 
 
@@ -423,6 +404,9 @@ footer p{
   }
 }
 @media screen and (max-width: 768px){
+    h1{
+        font-size:40px;
+    }
     .wrapper{
         width:100%;
     }
@@ -449,12 +433,47 @@ footer p{
         box-shadow: none;
     border:1px solid lightgrey;
     }
+    .it-box{
+        height:160px;
+    }
+    .it-box,
+    a,
+    p{
+        font-size:15px;
+    }
+    #img-wifi{
+        width:100px;
+    }
+    #img-meet{
+        width:80px;
+    }
+    #img-classroom{
+        width:90px;
+        height:80px;
+    }
+    #img-slack{
+        width:100px;
+    }
+    #img-hangouts{
+        width:150px;
+    }
+    #img-discord{
+        width:70px;
+    }
+    #logo img{
+        width:90px;
+    }
+    .wifi-password{
+        font-size:19px;
+    }
+   
     .csn-wrapper,
     .schoolsoft-wrapper{
+        justify-content: center;
         width:100%;
         flex-direction:column;
-       
     }
+
     .csn-container,
     .schoolsoft-container{
         width:90%;
@@ -463,17 +482,20 @@ footer p{
         flex-wrap:wrap;
         height:100%;
     }
-      .links{
-          height:40px;
-      }  
-    
-      .footer-container{
-   
-        display:flex;
-        flex-direction: column;
-       
+    .csn-text,
+    .schoolsoft-text{
+        padding:20px;
     }
-    
+      .footer-container{
+         display:flex;
+        flex-direction: column;  
+    }
+    footer p{
+        font-size:16px;
+    }
+    footer h4{
+        font-size:18px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -481,6 +503,9 @@ footer p{
         font-size:30px;
     }
     p{
+        font-size:15px;
+    }
+    #sidepanel a{
         font-size:15px;
     }
     .wrapper{
@@ -498,11 +523,15 @@ footer p{
       .csn-text{
           padding:0 0 50px 20px;
       }
-  .links{
-      width:120px;
-  }
+ 
   .info-box{
     width:90%;
+   }
+   .info-box p{
+       font-size:14px;
+   }
+   .info-box h3{
+       font-size:15px;
    }
    .csn-text{
        width:100%;
@@ -517,34 +546,23 @@ footer p{
 }
     .it-box{
         width:100%;
-        height:180px;
+        height:150px;
         text-align:center;
     }
-.it-box a{
-    font-size:15px;
-}
-#logo img{
+    #img-wifi{
+        width:80px;
+    }
+    #img-classroom,
+#img-slack{
     width:90px;
 }
-.wifi-password{
-    font-size:19px;
-}
-#img-wifi{
-    width:100px;
-}
 #img-meet{
-    width:80px;
-}
-#img-classroom,
-#img-slack{
-    width:100px;
-}
-#img-hangouts{
-    width:150px;
+    width:60px;
 }
 #img-discord{
-    width:70px;
+    width:55px;
 }
+
 footer{
     padding:5px;
 }
